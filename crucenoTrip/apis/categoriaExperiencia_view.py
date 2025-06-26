@@ -4,13 +4,11 @@ from rest_framework.response import Response
 from crucenoTrip.models import CategoriaExperiencia
 
 
-# Serializer en el mismo archivo
 class CategoriaExperienciaSerializer(serializers.ModelSerializer):
     class Meta:
         model = CategoriaExperiencia
         fields = ['id', 'nombre']
 
-# ViewSet en el mismo archivo
 class CategoriaExperienciaViewSet(viewsets.ModelViewSet):
     queryset = CategoriaExperiencia.objects.all()
     serializer_class = CategoriaExperienciaSerializer
