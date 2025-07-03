@@ -1,4 +1,4 @@
-from rest_framework import serializers, viewsets, status
+from rest_framework import serializers, viewsets
 from rest_framework.permissions import IsAuthenticated
 from crucenoTrip.models import CarritoReserva
 
